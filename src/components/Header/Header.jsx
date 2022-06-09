@@ -3,6 +3,7 @@ import './main.scss'
 import './response.scss'
 import { useEffect } from 'react'
 import { Link } from "react-router-dom"
+
 const Header = () => {
     useEffect(() => {
         window.addEventListener("scroll", isSticky);
@@ -17,6 +18,7 @@ const Header = () => {
             ? header.classList.add("is-sticky")
             : header.classList.remove("is-sticky");
     };
+
     const RefreshPage = () => {
         setTimeout(() => window.location.reload(false), 300)
     }
@@ -42,7 +44,6 @@ const Header = () => {
                                         Решения
                                     </Link>
                                 </li>
-
                                 <li onClick={RefreshPage}>
                                     <Link to="products">
                                         Продукты

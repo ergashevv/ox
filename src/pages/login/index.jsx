@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import './main.scss'
 import { UserNameIcon, LockIcon } from '../../assets/images/icons'
+import { useHistory } from 'react-router-dom'
 const Login = () => {
+    const history = useHistory();
     const [state, setState] = useState(false)
     const [error, setError] = useState(false);
     const SignUpHandler = (e) => {
@@ -33,6 +35,7 @@ const Login = () => {
             .then((response) => {
                 if (response.status === 200) {
                     localStorage.setItem("token", JSON.stringify(token))
+                    return history.push("/")
                 }
                 else {
                     localStorage.removeItem("token")
