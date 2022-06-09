@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useHistory } from "react-router-dom";
 import './main.scss'
 import { UserNameIcon, LockIcon } from '../../assets/images/icons'
 const Login = () => {
