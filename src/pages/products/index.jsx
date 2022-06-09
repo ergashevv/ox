@@ -51,7 +51,7 @@ const Products = () => {
                         : (
                             <>
                                 <div>
-                                    <Form.Group className="mb-3 s`earch-label" controlId="exampleForm.ControlInput1">
+                                    <Form.Group className="mb-3 search-label" controlId="exampleForm.ControlInput1">
                                         <Form.Label>поиск по продаже  </Form.Label>
                                         <Form.Control onChange={(e) => Filt(e.target.value)} className="search-input" type="text" placeholder="поиск" />
                                     </Form.Group>
