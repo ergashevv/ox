@@ -1,0 +1,247 @@
+.register-section {
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.register-header {
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+
+.register-header .site-header__container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.register-main {
+    padding: 100px 20px;
+    min-height: calc(100vh - 100px);
+    background: url("../../assets/images/buildings-img.png") no-repeat center 0;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 60px 25px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:768px) {
+    .register-main {
+        min-height: 100vh;
+    }
+
+    .register-form {
+        max-width: 300px;
+    }
+
+    .register-main {
+        padding-top: 200px;
+    }
+}
+
+.register-password-show {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border: none;
+    outline: none;
+    background: transparent url("../../assets/images/eye-off.png") no-repeat center;
+    background-size: contain;
+}
+
+.register-password-showing {
+    background: transparent url("../../assets/images/eye.svg") no-repeat center;
+    background-size: contain;
+}
+
+.error {
+    font-size: 14px;
+    line-height: 18px;
+    color: red;
+    text-align: center;
+}
+
+
+.register-submit {
+    &:hover {
+        color: white;
+    }
+}
+
+.register-header {
+    background-color: #000;
+
+    li {
+        .site-header__link {
+            color: #0a80ff;
+
+            &.site-header__link-active,
+            &:hover {
+                color: #D10D3A;
+            }
+        }
+
+    }
+}
+
+.register-title {
+    margin-top: 0;
+    margin-bottom: 23px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #274372;
+}
+
+.register-text {
+    margin-top: 0;
+    margin-bottom: 43px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #696871;
+}
+
+.register-text a {
+    color: #0a80ff;
+    transition: 0.3s ease;
+}
+
+.register-text a:hover {
+    color: #081d34;
+}
+
+.register-label {
+    width: 100%;
+    margin-bottom: 24px;
+
+    &:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    span {
+
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        color: #0a80ff;
+    }
+
+    .not-same {
+        border-color: red;
+    }
+
+    svg {
+        margin-right: 13px;
+        fill: white;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+}
+
+.register-label div {
+    border: 1px solid #fff;
+    padding: 18px 14px;
+    display: flex;
+    background: #000;
+    border-radius: 5px;
+
+    input {
+        color: white;
+    }
+}
+
+.register-submit {
+    cursor: pointer;
+    width: 100%;
+    padding: 18px 25px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    background: #081d34;
+    border-radius: 5px;
+    border: 1px solid #081d34;
+    outline: none;
+    transition: 0.3s ease;
+    margin-bottom: 60px;
+}
+
+.register-submit:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.register-submit:active {
+    transform: scale(0.97);
+}
+
+.register-forget {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #a2a7b0;
+    transition: 0.3s ease;
+}
+
+.register-forget:hover {
+    color: #081d34;
+}
+
+@media only screen and (max-width:425px) {
+    .register-form {
+        padding: 20px 25px;
+        border-radius: 12px;
+    }
+
+    .register-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .register-text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+
+
+    .register-label span {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .register-label div {
+        padding: 15px 10px;
+    }
+
+    .register-submit {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 35px;
+        padding: 15px;
+    }
+}
+
+.password-error {
+    color: red;
+    margin-bottom: 20px;
+}

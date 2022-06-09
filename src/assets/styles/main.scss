@@ -1,0 +1,46 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #111;
+    margin-top: 100px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.load-anim {
+    animation: loadAnim 1s 1;
+}
+
+@keyframes loadAnim {
+    from {
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.loading-forum {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    left: 46%;
+}

@@ -1,0 +1,109 @@
+@media screen and (max-width: 768px) {
+    .for-bg {
+        max-width: 100%;
+        min-height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .header-wrapper {
+        .container {
+            .site-logo {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+
+        }
+    }
+
+    .info-site {
+        margin-top: 30px;
+
+        .info-inner {
+            .info-i {
+                font-size: 15px;
+
+            }
+
+            .about-me {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-wrapper {
+        .container {
+            .site-logo {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+     
+        }
+    }
+
+    .info-site {
+        margin-top: 30px;
+
+        .info-inner {
+            .dev-name {
+                font-size: 20px;
+            }
+
+            .field {
+                font-size: 40px;
+            }
+
+            .about-me {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header-wrapper {
+        .container {
+            .site-logo {
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+
+    .info-site {
+        margin-top: 30px;
+
+        .info-inner {
+            .dev-name {
+                font-size: 17px;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+
+            .field {
+                font-size: 30px;
+            }
+
+            .about-me {
+                display: none;
+            }
+
+            .work {
+                margin-bottom: 14px;
+                display: inline-block;
+                padding: 8px 30px;
+            }
+        }
+    }
+}
