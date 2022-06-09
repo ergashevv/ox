@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './main.scss'
 import { UserNameIcon, LockIcon } from '../../assets/images/icons'
 const Login = () => {
-    let history = useHistory();
     const [state, setState] = useState(false)
     const [error, setError] = useState(false);
     const SignUpHandler = (e) => {
