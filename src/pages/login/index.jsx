@@ -35,7 +35,6 @@ const Login = () => {
             .then((response) => {
                 if (response.status === 200) {
                     localStorage.setItem("token", JSON.stringify(token))
-                    return history.push("/")
                 }
                 else {
                     localStorage.removeItem("token")
